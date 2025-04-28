@@ -1,4 +1,4 @@
-
+1:
 let contador = 0;
 const botaoContador = document.getElementById("botao-contador");
 const h3Contador = document.getElementById("contador");
@@ -27,6 +27,24 @@ formulario.addEventListener("submit", function (event) {
 
   if (campoEmail.value.trim() === "") {
     mensagemErro.textContent = "O campo de email é obrigatório!";
+
+2:document.getElementById("botaoClique").addEventListener("click", function() {
+  this.textContent = "Clicado!";
+});
+
+
+function mudarConteudo() {
+  document.getElementById("caixa").innerHTML = "<strong>Conteúdo em negrito</strong>";
+}
+
+
+function estilizarParagrafo() {
+  const p = document.getElementById("paragrafo");
+  p.style.color = "green";          
+  p.style.fontSize = "20px";        
+  p.style.backgroundColor = "yellow"; 
+}
+
   } else {
     mensagemErro.textContent = ""; 
     alert("Formulário enviado com sucesso!");
