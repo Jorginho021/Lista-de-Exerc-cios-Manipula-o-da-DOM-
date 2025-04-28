@@ -50,18 +50,18 @@
 </head>
 <body>
 
-  <!-- 1. Botão que muda de texto -->
+
   <button id="botaoClique">Clique aqui</button>
 
   <br><br>
 
-  <!-- 2. Div cujo conteúdo será alterado -->
+  
   <div id="caixa">Conteúdo original</div>
   <button onclick="mudarConteudo()">Mudar conteúdo</button>
 
   <br><br>
 
-  <!-- 3. Parágrafo com estilos modificáveis -->
+  
   <p id="paragrafo">Este é um parágrafo que será estilizado.</p>
   <button onclick="estilizarParagrafo()">Aplicar estilos</button>
 
@@ -70,3 +70,94 @@
 </body>
 </html>
 
+
+3:<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Intermediário: Classes e Eventos</title>
+  <style>
+    /* Classe CSS para estilizar o parágrafo */
+    .estilizado {
+      color: white;
+      background-color: blue;
+      padding: 10px;
+      border: 2px solid red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <button id="adicionarEstilo">Adicionar Estilo</button>
+
+
+  <button id="removerEstilo">Remover Estilo</button>
+
+  <br><br>
+
+  <p id="paragrafo">Este é um parágrafo. Clique para adicionar ou remover o estilo.</p>
+
+  <br><br>
+
+  
+  <form id="formSaudacao">
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="saudacao"></p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+4:<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventos e Interatividade</title>
+  <style>
+   
+    #quadrado {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin-bottom: 20px;
+    }
+    .erro {
+      color: red;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="botaoContar">Contar Cliques</button>
+  <h3 id="contador">Contador: 0</h3>
+
+  <br><br>
+
+  <div id="quadrado"></div>
+
+  <br><br>
+
+  <form id="formulario">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="erro" class="erro" style="display: none;">Por favor, insira um e-mail válido!</p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
