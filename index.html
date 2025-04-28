@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventos e Interatividade</title>
+  <style>
+    #quadrado {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      margin: 20px 0;
+      border: 1px solid #000;
+    }
+
+    #mensagem-erro {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <button id="botao-contador">Contar Cliques</button>
+  <h3 id="contador">Contador: 0</h3>
+
+ 
+  <div id="quadrado"></div>
+
+  <form id="formulario-avancado">
+    <label for="nome-avancado">Nome:</label><br>
+    <input type="text" id="nome-avancado"><br><br>
+
+    <label for="email-avancado">Email:</label><br>
+    <input type="email" id="email-avancado"><br><br>
+
+    <button type="submit">Enviar</button>
+    <p id="mensagem-erro"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
